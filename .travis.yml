@@ -1,12 +1,18 @@
 language: php
 php:
-  - '5.3'
-  - '5.4'
-  - '5.5'
-  - '5.6'
-  - '7.0'
+  - 5.3
+  - 5.4
+  - 5.5
+  - 5.6
+  - 7.0
   - hhvm
   - nightly
 
+script: ant test
+
+before_install: composer self-update
 install:
   composer install
+
+notifications:
+  hipchat: bd1fb79dbe701e1a1b50413262cb76@Conwemo
