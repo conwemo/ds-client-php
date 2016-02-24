@@ -16,7 +16,9 @@
     </target>
 
     <target name="test" description="Run unit tests using PHPUnit">
-        <exec executable="phpunit" dir="tests" failonerror="true"/>
+        <exec executable="phpunit" dir="" failonerror="true">
+            <arg line=" tests"/>
+        </exec>
     </target>
 
     <target name="phploc" description="Generate phploc.csv">
