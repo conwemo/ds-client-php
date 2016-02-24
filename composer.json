@@ -1,0 +1,12 @@
+{
+  "name": "conwemo/ds-client",
+  "autoload": {
+    "psr-0" : {
+      "Conwemo\\DropShipping\\Client" : "src"
+    }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "6.1.1",
+    "phpunit/phpunit": "4.8.23"
+  }
+}
